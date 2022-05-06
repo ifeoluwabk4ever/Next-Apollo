@@ -17,23 +17,21 @@ const Header = () => {
 				<Link href="/" className="no-underline black">
 					<div className="fw7 mr1">Hacker News</div>
 				</Link>
-				<Link href="/" className="ml1 no-underline black capitalize">
+				<Link href="/" className="ml1 no-underline black ttc">
 					new
 				</Link>
 				<div className="ml1">|</div>
-				<Link href="/top" className="ml1 no-underline black capitalize">
+				<Link href="/top" className="ml1 no-underline black ttc">
 					top
 				</Link>
 				<div className="ml1">|</div>
-				<Link href="/search" className="ml1 no-underline black capitalize">
+				<Link href="/search" className="ml1 no-underline black ttc">
 					search
 				</Link>
 				{authToken && (
 					<div className="flex">
 						<div className="ml1">|</div>
-						<Link
-							href="/create"
-							className="ml1 no-underline black capitalize">
+						<Link href="/create" className="ml1 no-underline black ttc">
 							submit
 						</Link>
 					</div>
@@ -50,9 +48,7 @@ const Header = () => {
 						logout
 					</div>
 				) : (
-					<Link
-						href="/login"
-						className="ml1 no-underline black capitalize">
+					<Link href="/login" className="ml1 no-underline black ttc">
 						login
 					</Link>
 				)}
