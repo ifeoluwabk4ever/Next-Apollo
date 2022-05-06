@@ -1,18 +1,93 @@
-html,
+:root {
+	--primary-color: #f8f9fa;
+	--text-color: #2096d9;
+	--text-color-2: #0f3042;
+	--text-color-3: #51626b;
+	--text-color-4: #8d8d8d;
+	--primary-font: Mulish;
+	--secondary-color: #fcfdff;
+	--secondary-color-2: #f8fbfe;
+	--secondary-color-3: #f4f4f4;
+	--secondary-color-4: #fff7f7;
+}
 body {
-	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
+input {
+	max-width: 500px;
 }
 
+.gray {
+	color: #828282;
+}
+
+.orange {
+	background-color: #ff6600;
+}
+
+.background-gray {
+	background-color: rgb(246, 246, 239);
+}
+
+.f11 {
+	font-size: 11px;
+}
+
+.w85 {
+	width: 85%;
+}
+
+.button {
+	font-family: monospace;
+	font-size: 10pt;
+	color: black;
+	background-color: buttonface;
+	text-align: center;
+	padding: 2px 6px 3px;
+	border-width: 2px;
+	border-style: outset;
+	border-color: buttonface;
+	cursor: pointer;
+	max-width: 250px;
+}
 * {
-	box-sizing: border-box;
-	margin: 0;
+	font-family: var(--primary-font);
 	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 5px;
+	height: 6px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px var(--text-color-2);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--text-color);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--text-color-2);
+}
+
+.header {
+	background: var(--primary-color) !important;
+	font-family: var(--primart-font);
+	font-size: 16px !important;
+	height: 80px !important;
+}
+.textColor {
+	color: var(--text-color) !important;
+}
+.wallpaper {
+	background: url(../Assets/4.jpg);
+	height: 90vh;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
